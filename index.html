@@ -1,0 +1,3505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- ===== css ============ -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- ===== Google fonts ======= -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500;700&display=swap">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+
+    <!-- ======= Bootstrap ======= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <!-- ======= Font-Awesome ======= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- ======= Gsap Animation ======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <div class="layout">
+        <main id="main">
+            <!-- ======= Navigation ======= -->
+            <nav>
+                <div class="logo">
+                    <p id="openModal"><span class="material-symbols-outlined">dialpad
+                    </span></p>
+                    <h2>Start.</h2>
+                </div>
+                <div class="links">
+                    <p class="icons"><span class="material-symbols-outlined" id="search-btn">find_replace</span>
+                    </p>
+
+                    <p class="icons"><span class="material-symbols-outlined" id="msg-btn">mark_unread_chat_alt</span></p>
+
+                    <div class="drop">
+                        <p class="icons dropbtn"><span class="material-symbols-outlined">background_replace</span>
+                        </p>
+                        <div class="drop-content">
+                            <div class="image">
+                            <img src="./img/Avater/Avater2.webp" alt="">
+                            <div class="Text">
+                            <p>Hello, James</p>
+                            <span>CRM Product Designer</span>
+                            </div>
+                            </div>
+
+                            <div class="drop-items" style="border-bottom: 1px solid #eeeeee;">
+                                <a href="#" class="item">
+                                <span class="material-symbols-outlined">view_comfy_alt
+                                </span>
+                                <p>My Profile</p>
+                                </a>
+                                <a href="#" class="item" style="border-left: 1px solid #eeeeee;">
+                                <span class="material-symbols-outlined">settings_account_box
+                                </span>
+                                <p>Settings</p>
+                                </a>
+                            </div>
+                            <div class="drop-items">
+                                <a href="#" class="item">
+                                <span class="material-symbols-outlined">euro_symbol
+                                </span>
+                                <p>Subscriptions</p>
+                                </a>
+                                <a href="#" class="item" style="border-left: 1px solid #eeeeee;">
+                                <span class="material-symbols-outlined">logout
+                                </span>
+                                <p>Sign Out</p>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <p class="num" id="num-btn"><span>3</span></p>
+
+                    <p class="icons"><span class="material-symbols-outlined" id="btn">menu_open</span>
+                    </p>
+                </div>
+            </nav>
+            <!-- ======= End Navigation ======= -->
+            
+            <div class="btn-container">
+                <div class="helpbtn">
+                    <div class="tooltip-container">
+                        <a href="#" class="btn">Explore</a>
+                        <div class="tol">
+                            <p>Start HTML Pro</p>
+                        </div>
+                    </div>
+                    <div class="tooltip-container">
+                        <a href="#" class="btn">Help</a>
+                        <div class="tol">
+                            <p>Learn & Get Inpired</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- =========== section 1 ============ -->
+            <div class="left-items">
+                <div class="home">
+                    <div class="title">
+                        <h2>Kickstart</h2>
+                        <h2>Mobile Application</h2>
+                    </div>
+                    <br>
+                    <div class="button">
+                        <a href="#" class="btn">Craete App</a>
+                    </div>
+                    <br>
+                    <div class="image"><img src="./img/Home2.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="campaign">
+                    <div class="title">
+                        <div class="head">
+                            <p>Campaign Leaders</p>
+                            <span>890,344 Sales</span>
+                        </div>
+
+                        <div class="Buttons">
+                            <span class="btn active" onclick="toggleSpan(this, 1, 'One')">Days</span>
+                            <span class="btn" onclick="toggleSpan(this, 2, 'Two')">Weeks</span>
+                            <span class="btn" onclick="toggleSpan(this, 3, 'Three')">Months</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="container-description">
+                        <div style="display: block;" class="Description element1 One">
+                            <div class="collection">
+                                <div class="items-box">
+                                <p style="background-color: #d9ffd9;" class="icon">
+                                    <span style="color: #4bfd4b;" class="material-symbols-outlined">rib_cage</span>
+                                </p>
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">Top Authors</a>
+                                            <p>HTML/CSS/JS, Python</p></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="box">
+                                    <p>Progress</p>
+                                    <div class="p-container">
+                                    <div style="background-color: #d9ffd9;
+                                    " class="progress">
+                                    <div style="background-color: #4bfd4b;
+                                    width: 46%;" class="bar anime"></div>
+                                    </div>
+                                    <p>46%</p>
+                                    </div>
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <div class="collection">
+                                <div class="items-box">
+                                <p style="background-color: #fff3d9;" class="icon">
+                                    <span style="color: #fdc54b;" class="material-symbols-outlined">flex_wrap</span>
+                                </p>
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">Popular Authors</a>
+                                        <p>HTML, VueJS, Laravel</p>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="box">
+                                    <p>Progress</p>
+                                    <div class="p-container">
+                                    <div style="background-color: #fff3d9;
+                                    " class="progress">
+                                    <div style="background-color: #fdc54b;
+                                    width: 87%;" class="bar anime"></div>
+                                    </div>
+                                    <p>87%</p>
+                                    </div>
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <div class="collection">
+                                <div class="items-box">
+                                    <p style="background-color: #fcd9ff;" class="icon">
+                                        <span style="color: #cb4bfd;" class="material-symbols-outlined">hand_bones</span>
+                                    </p>
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">New Products</a>
+                                            <p>HTML/CSS/JS, Python</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="box">
+                                    <p>Progress</p>
+                                    <div class="p-container">
+                                    <div style="background-color: #fcd9ff;
+                                    " class="progress">
+                                    <div style="background-color: #cb4bfd;
+                                    width: 53%;" class="bar anime"></div>
+                                    </div>
+                                    <p>53%</p>
+                                    </div>
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <div class="collection">
+                                <div class="items-box">
+                                    <p style="background-color: #ffd9d9;" class="icon">
+                                        <span style="color: #fd4b4b;" class="material-symbols-outlined">hotel_class</span>
+                                    </p>
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">Top Authors</a>
+                                            <p>HTML/CSS/JS, Python</p></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="box">
+                                    <p>Progress</p>
+                                    <div class="p-container">
+                                    <div style="background-color: #ffd9d9;
+                                    " class="progress">
+                                    <div style="background-color: #fd4b4b;
+                                    width: 92%;" class="bar anime"></div>
+                                    </div>
+                                    <p>92%</p>
+                                    </div>
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="Description element2 Two">
+                            <div class="collection">
+                                <div class="items-box">
+                                <p style="background-color: #d9e6ff;" class="icon">
+                                    <span style="color: #4ba7fd;" class="material-symbols-outlined">macro_auto</span>
+                                </p>
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">New Users</a>
+                                            <p>C++/PHP/JS, Python</p></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="box">
+                                    <p>Progress</p>
+                                    <div class="p-container">
+                                    <div style="background-color: #d9e6ff;
+                                    " class="progress">
+                                    <div style="background-color: #4ba7fd;
+                                    width: 56%;" class="bar anime"></div>
+                                    </div>
+                                    <p>56%</p>
+                                    </div>
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <div class="collection">
+                                <div class="items-box">
+                                <p style="background-color: #ffd9d9;" class="icon">
+                                    <span style="color: #fd4b4b;" class="material-symbols-outlined">shutter_speed_add</span>
+                                </p>
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">Weekly Bestsellers</a>
+                                        <p>Laravel, Java, VueJS,</p>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="box">
+                                    <p>Progress</p>
+                                    <div class="p-container">
+                                    <div style="background-color: #ffd9d9;
+                                    " class="progress">
+                                    <div style="background-color: #fd4b4b;
+                                    width: 92%;" class="bar anime"></div>
+                                    </div>
+                                    <p>92%</p>
+                                    </div>
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <div class="collection">
+                                <div class="items-box">
+                                    <p style="background-color: #d9fbff;" class="icon">
+                                        <span style="color: #4be2fd;" class="material-symbols-outlined">join_right</span>
+                                    </p>
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">Top Authors</a>
+                                            <p>Java, HTML/CSS/JS</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="box">
+                                    <p>Progress</p>
+                                    <div class="p-container">
+                                    <div style="background-color: #d9fbff;;
+                                    " class="progress">
+                                    <div style="background-color: #4be2fd;;
+                                    width: 43%;" class="bar anime"></div>
+                                    </div>
+                                    <p>43%</p>
+                                    </div>
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <div class="collection">
+                                <div class="items-box">
+                                    <p style="background-color: #daffd9;" class="icon">
+                                        <span style="color: #60fd4b;" class="material-symbols-outlined">sports_soccer</span>
+                                    </p>
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">Popular Authors</a>
+                                        <p>Java, HTML/CSS/JS</p>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="box">
+                                    <p>Progress</p>
+                                    <div class="p-container">
+                                    <div style="background-color: #daffd9;
+                                    " class="progress">
+                                    <div style="background-color: #60fd4b;
+                                    width: 80%;" class="bar anime"></div>
+                                    </div>
+                                    <p>80%</p>
+                                    </div>
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="Description element3 Three">
+                            <div class="collection">
+                                <div class="items-box">
+                                <p style="background-color: #fcd9ff;" class="icon">
+                                    <span style="color: #fd4bfd;" class="material-symbols-outlined">brightness_high</span>
+                                </p>
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">Popular Authors</a>
+                                            <p>HTML/CSS/JS, PHP</p></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="box">
+                                    <p>Progress</p>
+                                    <div class="p-container">
+                                    <div style="background-color: #fcd9ff;
+                                    " class="progress">
+                                    <div style="background-color: #fd4bfd;
+                                    width: 86%;" class="bar anime"></div>
+                                    </div>
+                                    <p>86%</p>
+                                    </div>
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <div class="collection">
+                                <div class="items-box">
+                                <p style="background-color: #d9fffa;" class="icon">
+                                    <span style="color: #4bfdb9;" class="material-symbols-outlined">screen_record</span>
+                                </p>
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">Weekly Bestsellers</a>
+                                        <p>Laravel, Java, VueJS,</p>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="box">
+                                    <p>Progress</p>
+                                    <div class="p-container">
+                                    <div style="background-color: #d9fffa;
+                                    " class="progress">
+                                    <div style="background-color: #4bfdb9;
+                                    width: 53%;" class="bar anime"></div>
+                                    </div>
+                                    <p>53%</p>
+                                    </div>
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <div class="collection">
+                                <div class="items-box">
+                                    <p style="background-color: #fff2d9;" class="icon">
+                                        <span style="color: #fdb64b;" class="material-symbols-outlined">spa</span>
+                                    </p>
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">Top Authors</a>
+                                            <p>Java, HTML/CSS/JS</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="box">
+                                    <p>Progress</p>
+                                    <div class="p-container">
+                                    <div style="background-color: #fff2d9;
+                                    " class="progress">
+                                    <div style="background-color: #fdb64b;
+                                    width: 43%;" class="bar anime"></div>
+                                    </div>
+                                    <p>43%</p>
+                                    </div>
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <div class="collection">
+                                <div class="items-box">
+                                    <p style="background-color: #ffd9d9;" class="icon">
+                                        <span style="color: #fd4b4b;" class="material-symbols-outlined">mode_fan</span>
+                                    </p>
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">Popular Authors</a>
+                                        <p>Java, HTML/CSS/JS</p>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="box">
+                                    <p>Progress</p>
+                                    <div class="p-container">
+                                    <div style="background-color: #ffd9d9;
+                                    " class="progress">
+                                    <div style="background-color: #fd4b4b;
+                                    width: 40%;" class="bar anime"></div>
+                                    </div>
+                                    <p>40%</p>
+                                    </div>
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- =========== End section 1 ============ -->
+
+            <!-- =========== section 2 ============ -->
+            <div class="left-items">
+                    <div class="sale-share">
+                        <div class="title">
+                            <div class="head">
+                                <p>Sales Share</p>
+                                <span>890,344 Sales</span>
+                            </div>
+
+                            <div class="DropDown drop11">
+                                <p class="icons dropdown-button" onclick="toggleDropdown11()"><span class="material-symbols-outlined ">lens_blur</span>
+                                </p>
+                                <div class="DropDown-Content">
+                                <div class="head">Manage</div>
+                                <a href="#">Add User</a>
+                                <a href="#">Add Role</a>
+                                <a href="#">
+                                <div class="dropdown">
+                                Add Group
+                                <span style="color: #0199ff;
+                                font-size: 16px;" class="material-symbols-outlined">navigate_next</span>
+                                <div class="dropdown-content">
+                                <div class="links">Create Group</div>
+                                <div class="links">Invite Members</div>
+                                <div class="links">Settings</div>
+                                </div>
+                                </div>
+                                </a>
+
+                                <a href="#">Reports</a>
+                                <div class="button">
+                                <a class="btn" href="#">Create New</a>
+                                </div>
+                                </div>
+                                </div>
+                        </div>
+
+                        <br>
+                            <div class="r-container">
+                            <div id="infinity">
+                                    <div class="tol">
+                                        <p>HTML</p>
+                                        <p><span></span>25</p>
+                                    </div>
+                                </div>
+                            <br><br><br><br>
+                            <div id="infinity">
+                                    <div class="tol">
+                                        <p>Angular</p>
+                                        <p><span></span>30</p>
+                                        </div>
+                            </div>
+                            <br><br><br><br>
+                            <div id="infinity">
+                                    <div class="tol">
+                                        <p>Css</p>
+                                        <p><span></span>40</p>
+                                        </div>
+                                </div>
+                            </div>
+                            
+
+                        <div class="keen-theme">
+                            <div class="theme">
+                                <p>48% SNT</p>
+                                <span class="progress" style="background-color: #cb4bfd;"></span>
+                            </div>
+                            <div class="theme">
+                                <p>20% REX</p>
+                                <span class="progress" style="background-color: #fd4b4b;"></span>
+                            </div>
+                            <div class="theme">
+                                <p>32% SAP</p>
+                                <span class="progress" style="background-color: #fdc54b;"></span>
+                            </div>
+                        </div>
+
+                        </div>
+
+                    <div class="milestones">
+                        <div class="title">
+                            <div class="head">
+                                <p>Campaign Leaders</p>
+                                <span>890,344 Sales</span>
+                            </div>
+                            <div class="DropDown drop12">
+                                <p class="icons dropdown-button" onclick="toggleDropdown12()"><span class="material-symbols-outlined ">lens_blur</span>
+                                </p>
+                                <div class="DropDown-Content">
+                                    <div class="search-container">
+                                        <button class="search-button"><span class="material-symbols-outlined">
+                                            search</span></button>
+                                        <input type="text" class="search-input" placeholder="Filter report">
+                                    </div>
+                                <div class="head-container">
+                                    <p class="paragraph active" onclick="toggleButton(this, 1, 'pOne')">Today</p>
+                                    <p class="paragraph" onclick="toggleButton(this, 2, 'pTwo')">Last Week</p>
+                                </div>
+                                <div class="links1 pOne" style="display: block;">
+                                <a href="#">
+                                    <span class="material-symbols-outlined">rocket_launch</span>
+                                    Web & App History
+                                </a>
+                                <a href="#">
+                                    <span class="material-symbols-outlined">newspaper</span>
+                                    <div class="text">
+                                        Activity and Timeline
+                                        <div class="btn">New</div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <span class="material-symbols-outlined">Monitoring</span>
+                                    Business Features
+                                </a>
+                                <a href="#">
+                                    <span class="material-symbols-outlined">settings</span>
+                                    Accessibility Settings
+                                </a>
+                                <a href="#">
+                                    <span class="material-symbols-outlined">database</span>
+                                    Data & Personalisation
+                                </a>
+                                <a href="#">
+                                    <span class="material-symbols-outlined">psychology</span>
+                                    General Preference
+                                </a>
+                                </div>
+
+                                <div class="links1 pTwo">
+                                <a href="#">
+                                    <span class="material-symbols-outlined">newspaper</span>
+                                    <div class="text">
+                                        Activity and Timeline
+                                        <div class="btn">New</div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <span class="material-symbols-outlined">settings</span>
+                                    Accessibility Settings
+                                </a>
+                                <a href="#">
+                                    <span class="material-symbols-outlined">database</span>
+                                    Data & Personalisation
+                                </a>
+                                <a href="#">
+                                    <span class="material-symbols-outlined">Monitoring</span>
+                                    Business Features
+                                </a>                 
+                                <a href="#">
+                                    <span class="material-symbols-outlined">psychology</span>
+                                    General Preference
+                                </a>
+                                <a href="#">
+                                    <span class="material-symbols-outlined">rocket_launch</span>
+                                    Web & App History
+                                </a>
+                                </div>
+                            
+                                </div>
+                                </div>
+                        </div>
+
+                    <div class="items-container">
+                        <div class="items active" onclick="toggleBtn(this, 1, 'itemsOne')">
+                            <img src="./img/Logi/Lo2.png" alt="">
+                            <div class="text">
+                                <p>Man&Flower SaaS</p>
+                                <span>HR Solutions</span>
+                            </div>
+                        </div>
+                        <div class="items" onclick="toggleBtn(this, 2, 'itemsTwo')">
+                            <img src="./img/Logi/Lo1.png" alt="">
+                            <div class="text">
+                                <p>Building Studio</p>
+                                <span>HR Solutions</span>
+                            </div>
+                        </div>
+                        <div class="items" onclick="toggleBtn(this, 3, 'itemsThree')">
+                            <img src="./img/Logi/Lo3.png" alt="">
+                            <div class="text">
+                                <p>Foxy Solutions</p>
+                                <span>HR Solutions</span>
+                            </div>
+                        </div>
+                        <div class="items" onclick="toggleBtn(this, 4, 'itemsFour')">
+                            <img src="./img/Logi/Lo4.png" alt="">
+                            <div class="text">
+                                <p>MyStreams</p>
+                                <span>HR Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-container itemsOne element4" style="display: block;">
+                        <br>
+                        <div class="text-container">
+                            <div class="text-item">
+                                <p>Sale</p>
+                                <span>$650</span>
+                            </div>
+                            <div class="text-item">
+                                <p>Commission</p>
+                                <span>$2,040</span>
+                            </div>
+                            <div class="text-item">
+                                <p>Refers</p>
+                                <span>8,926</span>
+                            </div>
+                        </div>
+                        <br>
+                            <div class="Progress-items">
+                                <div class="items">
+                                    <div class="collection">
+                                    <div class="progres" style="padding: 30px 7px;
+                                    background-color: #bae4ff;">
+                                        <div class="tol">
+                                            <div class="date">Fab</div>
+                                            <div class="text">
+                                                <div class="dot"></div>
+                                                <p>Net Profit:</p>
+                                                <span>$44 Thousands</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progres" style="padding: 50px 7px;
+                                    background-color: #838383;">
+                                        <div class="tol">
+                                            <div class="date">Fab</div>
+                                            <div class="text">
+                                                <div class="dot" style="background-color: #838383;"></div>
+                                                <p>Revenue:</p>
+                                                <span>$76 Thousands</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 40px 7px;
+                                        background-color: #bae4ff;">
+                                            <div class="tol">
+                                                <div class="date">Mar</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$55 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 60px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">Mar</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$85 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 40px 7px;
+                                        background-color: #bae4ff;">
+                                            <div class="tol">
+                                                <div class="date">Apr</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$57 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 80px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">Apr</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$101 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 37px 7px;
+                                        background-color: #bae4ff;">
+                                            <div class="tol">
+                                                <div class="date">May</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$56 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 75px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">May</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$98 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 45px 7px;
+                                        background-color: #bae4ff;">
+                                            <div class="tol">
+                                                <div class="date">Jun</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$61 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 65px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">Jun</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$87 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 42px 7px;
+                                        background-color: #bae4ff">
+                                            <div class="tol">
+                                                <div class="date">Jul</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$58 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 85px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">Jul</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$105 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Date-item">
+                                    <div class="Date">Fab</div>
+                                    <div class="Date">Mar</div>
+                                    <div class="Date">Apr</div>
+                                    <div class="Date">May</div>
+                                    <div class="Date">Jun</div>
+                                    <div class="Date">Jul</div>
+                                </div>
+                            </div>
+
+                            <div class="v-container">
+                                <div class="v">
+                                    <p>120</p>
+                                    <p>90</p>
+                                    <p>60</p>
+                                    <p>30</p>
+                                    <p>0</p>
+                                </div>
+                                <div class="Dash-container">
+                                    <div class="dash"></div>
+                                    <div class="dash"></div>
+                                    <div class="dash"></div>
+                                    <div class="dash"></div>
+                                    <div class="dash"></div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="progress-container itemsTwo element5">
+                        <br>
+                        <div class="text-container">
+                            <div class="text-item">
+                                <p>Sale</p>
+                                <span>$1250</span>
+                            </div>
+                            <div class="text-item">
+                                <p>Commission</p>
+                                <span>$5,00</span>
+                            </div>
+                            <div class="text-item">
+                                <p>Refers</p>
+                                <span>4,926</span>
+                            </div>
+                        </div>
+                        <br>
+                            <div class="Progress-items">
+                                <div class="items">
+                                    <div class="collection">
+                                    <div class="progres" style="padding: 30px 7px;
+                                    background-color: #bae4ff;">
+                                        <div class="tol">
+                                            <div class="date">Fab</div>
+                                            <div class="text">
+                                                <div class="dot"></div>
+                                                <p>Net Profit:</p>
+                                                <span>$44 Thousands</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progres" style="padding: 50px 7px;
+                                    background-color: #838383;">
+                                        <div class="tol">
+                                            <div class="date">Fab</div>
+                                            <div class="text">
+                                                <div class="dot" style="background-color: #838383;"></div>
+                                                <p>Revenue:</p>
+                                                <span>$76 Thousands</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 50px 7px;
+                                        background-color: #bae4ff;">
+                                            <div class="tol">
+                                                <div class="date">Mar</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$55 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 70px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">Mar</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$85 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 20px 7px;
+                                        background-color: #bae4ff;">
+                                            <div class="tol">
+                                                <div class="date">Apr</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$57 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 30px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">Apr</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$101 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 20px 7px;
+                                        background-color: #bae4ff;">
+                                            <div class="tol">
+                                                <div class="date">May</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$56 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 40px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">May</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$98 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 20px 7px;
+                                        background-color: #bae4ff;">
+                                            <div class="tol">
+                                                <div class="date">Jun</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$61 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 30px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">Jun</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$87 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 70px 7px;
+                                        background-color: #bae4ff">
+                                            <div class="tol">
+                                                <div class="date">Jul</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$58 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 90px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">Jul</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$105 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Date-item">
+                                    <div class="Date">Fab</div>
+                                    <div class="Date">Mar</div>
+                                    <div class="Date">Apr</div>
+                                    <div class="Date">May</div>
+                                    <div class="Date">Jun</div>
+                                    <div class="Date">Jul</div>
+                                </div>
+                            </div>
+
+                            <div class="v-container">
+                                <div class="v">
+                                    <p>120</p>
+                                    <p>90</p>
+                                    <p>60</p>
+                                    <p>30</p>
+                                    <p>0</p>
+                                </div>
+                                <div class="Dash-container">
+                                    <div class="dash"></div>
+                                    <div class="dash"></div>
+                                    <div class="dash"></div>
+                                    <div class="dash"></div>
+                                    <div class="dash"></div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="progress-container itemsThree element6">
+                        <br>
+                        <div class="text-container">
+                            <div class="text-item">
+                                <p>Sale</p>
+                                <span>$350</span>
+                            </div>
+                            <div class="text-item">
+                                <p>Commission</p>
+                                <span>$1,200</span>
+                            </div>
+                            <div class="text-item">
+                                <p>Refers</p>
+                                <span>5,500</span>
+                            </div>
+                        </div>
+                        <br>
+                            <div class="Progress-items">
+                                <div class="items">
+                                    <div class="collection">
+                                    <div class="progres" style="padding: 20px 7px;
+                                    background-color: #bae4ff;">
+                                        <div class="tol">
+                                            <div class="date">Fab</div>
+                                            <div class="text">
+                                                <div class="dot"></div>
+                                                <p>Net Profit:</p>
+                                                <span>$44 Thousands</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progres" style="padding: 50px 7px;
+                                    background-color: #838383;">
+                                        <div class="tol">
+                                            <div class="date">Fab</div>
+                                            <div class="text">
+                                                <div class="dot" style="background-color: #838383;"></div>
+                                                <p>Revenue:</p>
+                                                <span>$76 Thousands</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 30px 7px;
+                                        background-color: #bae4ff;">
+                                            <div class="tol">
+                                                <div class="date">Mar</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$55 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 60px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">Mar</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$85 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 30px 7px;
+                                        background-color: #bae4ff;">
+                                            <div class="tol">
+                                                <div class="date">Apr</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$57 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 80px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">Apr</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$101 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 40px 7px;
+                                        background-color: #bae4ff;">
+                                            <div class="tol">
+                                                <div class="date">May</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$56 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 70px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">May</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$98 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 30px 7px;
+                                        background-color: #bae4ff;">
+                                            <div class="tol">
+                                                <div class="date">Jun</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$61 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 60px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">Jun</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$87 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 50px 7px;
+                                        background-color: #bae4ff">
+                                            <div class="tol">
+                                                <div class="date">Jul</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$58 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 90px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">Jul</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$105 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Date-item">
+                                    <div class="Date">Fab</div>
+                                    <div class="Date">Mar</div>
+                                    <div class="Date">Apr</div>
+                                    <div class="Date">May</div>
+                                    <div class="Date">Jun</div>
+                                    <div class="Date">Jul</div>
+                                </div>
+                            </div>
+
+                            <div class="v-container">
+                                <div class="v">
+                                    <p>120</p>
+                                    <p>90</p>
+                                    <p>60</p>
+                                    <p>30</p>
+                                    <p>0</p>
+                                </div>
+                                <div class="Dash-container">
+                                    <div class="dash"></div>
+                                    <div class="dash"></div>
+                                    <div class="dash"></div>
+                                    <div class="dash"></div>
+                                    <div class="dash"></div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="progress-container itemsFour element7">
+                        <br>
+                        <div class="text-container">
+                            <div class="text-item">
+                                <p>Sale</p>
+                                <span>$450</span>
+                            </div>
+                            <div class="text-item">
+                                <p>Commission</p>
+                                <span>$6,500</span>
+                            </div>
+                            <div class="text-item">
+                                <p>Refers</p>
+                                <span>500</span>
+                            </div>
+                        </div>
+                        <br>
+                            <div class="Progress-items">
+                                <div class="items">
+                                    <div class="collection">
+                                    <div class="progres" style="padding: 40px 7px;
+                                    background-color: #bae4ff;">
+                                        <div class="tol">
+                                            <div class="date">Fab</div>
+                                            <div class="text">
+                                                <div class="dot"></div>
+                                                <p>Net Profit:</p>
+                                                <span>$44 Thousands</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progres" style="padding: 60px 7px;
+                                    background-color: #838383;">
+                                        <div class="tol">
+                                            <div class="date">Fab</div>
+                                            <div class="text">
+                                                <div class="dot" style="background-color: #838383;"></div>
+                                                <p>Revenue:</p>
+                                                <span>$76 Thousands</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 25px 7px;
+                                        background-color: #bae4ff;">
+                                            <div class="tol">
+                                                <div class="date">Mar</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$55 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 65px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">Mar</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$85 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 30px 7px;
+                                        background-color: #bae4ff;">
+                                            <div class="tol">
+                                                <div class="date">Apr</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$57 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 85px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">Apr</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$101 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 40px 7px;
+                                        background-color: #bae4ff;">
+                                            <div class="tol">
+                                                <div class="date">May</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$56 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 80px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">May</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$98 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 20px 7px;
+                                        background-color: #bae4ff;">
+                                            <div class="tol">
+                                                <div class="date">Jun</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$61 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 75px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">Jun</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$87 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collection">
+                                        <div class="progres" style="padding: 30px 7px;
+                                        background-color: #bae4ff">
+                                            <div class="tol">
+                                                <div class="date">Jul</div>
+                                                <div class="text">
+                                                    <div class="dot"></div>
+                                                    <p>Net Profit:</p>
+                                                    <span>$58 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progres" style="padding: 90px 7px;
+                                        background-color: #838383;">
+                                            <div class="tol">
+                                                <div class="date">Jul</div>
+                                                <div class="text">
+                                                    <div class="dot" style="background-color: #838383;"></div>
+                                                    <p>Revenue:</p>
+                                                    <span>$105 Thousands</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Date-item">
+                                    <div class="Date">Fab</div>
+                                    <div class="Date">Mar</div>
+                                    <div class="Date">Apr</div>
+                                    <div class="Date">May</div>
+                                    <div class="Date">Jun</div>
+                                    <div class="Date">Jul</div>
+                                </div>
+                            </div>
+
+                            <div class="v-container">
+                                <div class="v">
+                                    <p>120</p>
+                                    <p>90</p>
+                                    <p>60</p>
+                                    <p>30</p>
+                                    <p>0</p>
+                                </div>
+                                <div class="Dash-container">
+                                    <div class="dash"></div>
+                                    <div class="dash"></div>
+                                    <div class="dash"></div>
+                                    <div class="dash"></div>
+                                    <div class="dash"></div>
+                                </div>
+                            </div>
+                    </div>
+
+                    </div>
+
+            </div>
+            <!-- =========== End section 2 ============ -->
+
+            <!-- =========== section 3 ============ -->
+            <div class="left-items">
+                <div class="Timeline">
+                    <div class="title">
+                                <div class="head">
+                                    <p>Timeline</p>
+                                    <span>Notifications</span>
+                                </div>
+    
+                                <div class="DropDown drop13">
+                                    <p class="icons dropdown-button" onclick="toggleDropdown13()"><span class="material-symbols-outlined ">lens_blur</span>
+                                    </p>
+                                    <div class="DropDown-Content">
+                                    <div class="head">Manage</div>
+                                    <a href="#">Add User</a>
+                                    <a href="#">Add Role</a>
+                                    <a href="#">
+                                    <div class="dropdown">
+                                    Add Group
+                                    <span style="color: #0199ff;
+                                    font-size: 16px;" class="material-symbols-outlined">navigate_next</span>
+                                    <div class="dropdown-content">
+                                    <div class="links">Create Group</div>
+                                    <div class="links">Invite Members</div>
+                                    <div class="links">Settings</div>
+                                    </div>
+                                    </div>
+                                    </a>
+    
+                                    <a href="#">Reports</a>
+                                    <div class="button">
+                                    <a class="btn" href="#">Create New</a>
+                                    </div>
+                                    </div>
+                                    </div>
+                    </div>
+                    <br>
+                    <div class="timeline-item">
+                        <p class="time">05.34</p>
+                        <div class="line-container">
+                            <div class="line"></div>
+                            <div class="circle" style="border: 4px solid #e100ff;"></div>
+                        </div>
+                        <p class="text">Outlines keep you honest. And keep structure</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p class="time">10:00</p>
+                        <div class="line-container">
+                            <div class="line"></div>
+                            <div class="circle" style="border: 4px solid #0400ff;"></div>
+                        </div>
+                        <p class="text" style="color: #000000;">AEOL meeting</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p class="time">14:37</p>
+                        <div class="line-container">
+                            <div class="line"></div>
+                            <div class="circle" style="border: 4px solid #ff0000;"></div>
+                        </div>
+                        <p class="text" style="color: #000000;">Make deposit <a href="#">USD 700</a>. to ESL</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p class="time">16:50</p>
+                        <div class="line-container">
+                            <div class="line"></div>
+                            <div class="circle" style="border: 4px solid #8c00ff;"></div>
+                        </div>
+                        <p class="text">Indulging in poorly driving and keep structure keep great</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p class="time">21:03</p>
+                        <div class="line-container">
+                            <div class="line"></div>
+                            <div class="circle" style="border: 4px solid #00c3ff;"></div>
+                        </div>
+                        <p class="text" style="color: #000000;">New order placed <a href="#">#XF-2356</a>.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p class="time">16:50</p>
+                        <div class="line-container">
+                            <div class="line"></div>
+                            <div class="circle" style="border: 4px solid #00ff22;"></div>
+                        </div>
+                        <p class="text">Indulging in poorly driving and keep structure keep great</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p class="time">10:30</p>
+                        <div class="line-container">
+                            <div class="line"></div>
+                            <div class="circle" style="border: 4px solid #000000;"></div>
+                        </div>
+                        <p class="text" style="color: #000000;">Finance KPI Mobile app launch preparion meeting</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p class="time">05.34</p>
+                        <div class="line-container">
+                            <div class="line"></div>
+                            <div class="circle" style="border: 4px solid #002fff;"></div>
+                        </div>
+                        <p class="text">Outlines keep you honest. And keep structure</p>
+                    </div>
+
+
+                </div>
+    
+                <div class="achievement">
+                    <div class="title">
+                        <div class="head">
+                            <p>Achievement</p>
+                            <span>890,344 Sales</span>
+                        </div>
+
+                        <div class="Buttons">
+                            <span class="btnItem active" onclick="toggleAch(this, 1, 'One1')">Days</span>
+                            <span class="btnItem" onclick="toggleAch(this, 2, 'Two2')">Weeks</span>
+                            <span class="btnItem" onclick="toggleAch(this, 3, 'Three3')">Months</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="achieve-container">
+                        <div style="display: block;" class="script One1 element8">
+                            <div class="collection">
+                                <div class="items-box">
+                                <img src="./img/Avater/Collection1.jpg" alt="">
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">Brad Simmons</a>
+                                            <p>HTML, CSS Coding</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="amount"> 
+                                    <p>$1,200,000</p>
+                                    <span>Paid</span>
+                                    </div>
+                                    <div class="value" style="color: #ff8800;
+                                    ">+28%	
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="collection">
+                                <div class="items-box">
+                                <img src="./img/Avater/Collection2.webp" alt="">
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">	Jessie Clarcson</a>
+                                            <p>Most Successful</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="amount"> 
+                                    <p>$12,200,000</p>
+                                    <span>Paid</span>
+                                    </div>
+                                    <div class="value" style="color: #1eff00;
+                                    ">+53%	
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="collection">
+                                <div class="items-box">
+                                <img src="./img/Avater/Collection3.webp" alt="">
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">	Lebron Wayde</a>
+                                            <p>Awesome Users
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="amount"> 
+                                    <p>$5,200,000</p>
+                                    <span>Paid</span>
+                                    </div>
+                                    <div class="value" style="color: #00ccff;
+                                    ">+34%	
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="collection">
+                                <div class="items-box">
+                                <img src="./img/Avater/Collection4.jpg" alt="">
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">Kevin Leonard</a>
+                                            <p>Awesome Client</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="amount"> 
+                                    <p>$20,200,000</p>
+                                    <span>Paid</span>
+                                    </div>
+                                    <div class="value" style="color: #cc00ff;
+                                    ">+48%	
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="collection">
+                                <div class="items-box">
+                                <img src="./img/Avater/Avater3.webp" alt="">
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">	Randy Trent</a>
+                                            <p>Business Analyst</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="amount"> 
+                                    <p>$47,200,000</p>
+                                    <span>Paid</span>
+                                    </div>
+                                    <div class="value" style="color: #ff0000;
+                                    ">+328%	
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="script Two2 element9">
+                            <div class="collection">
+                                <div class="items-box">
+                                <img src="./img/Avater/Collection2.webp" alt="">
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">	Jessie Clarcson</a>
+                                            <p>Most Successful</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="amount"> 
+                                    <p>$12,200,000</p>
+                                    <span>Paid</span>
+                                    </div>
+                                    <div class="value" style="color: #1eff00;
+                                    ">+53%	
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="collection">
+                                <div class="items-box">
+                                <img src="./img/Avater/Collection4.jpg" alt="">
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">Kevin Leonard</a>
+                                            <p>Awesome Client</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="amount"> 
+                                    <p>$20,200,000</p>
+                                    <span>Paid</span>
+                                    </div>
+                                    <div class="value" style="color: #cc00ff;
+                                    ">+48%	
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="collection">
+                                <div class="items-box">
+                                <img src="./img/Avater/Collection3.webp" alt="">
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">	Lebron Wayde</a>
+                                            <p>Awesome Users
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="amount"> 
+                                    <p>$5,200,000</p>
+                                    <span>Paid</span>
+                                    </div>
+                                    <div class="value" style="color: #00ccff;
+                                    ">+34%	
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="collection">
+                                <div class="items-box">
+                                <img src="./img/Avater/Avater3.webp" alt="">
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">	Randy Trent</a>
+                                            <p>Business Analyst</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="amount"> 
+                                    <p>$47,200,000</p>
+                                    <span>Paid</span>
+                                    </div>
+                                    <div class="value" style="color: #ff0000;
+                                    ">+328%	
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="collection">
+                                <div class="items-box">
+                                <img src="./img/Avater/Collection1.jpg" alt="">
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">Brad Simmons</a>
+                                            <p>HTML, CSS Coding</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="amount"> 
+                                    <p>$1,200,000</p>
+                                    <span>Paid</span>
+                                    </div>
+                                    <div class="value" style="color: #ff8800;
+                                    ">+28%	
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="script Three3 element10">
+                            <div class="collection">
+                                <div class="items-box">
+                                <img src="./img/Avater/Avater3.webp" alt="">
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">	Randy Trent</a>
+                                            <p>Business Analyst</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="amount"> 
+                                    <p>$47,200,000</p>
+                                    <span>Paid</span>
+                                    </div>
+                                    <div class="value" style="color: #ff0000;
+                                    ">+328%	
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="collection">
+                                <div class="items-box">
+                                <img src="./img/Avater/Collection4.jpg" alt="">
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">Kevin Leonard</a>
+                                            <p>Awesome Client</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="amount"> 
+                                    <p>$20,200,000</p>
+                                    <span>Paid</span>
+                                    </div>
+                                    <div class="value" style="color: #cc00ff;
+                                    ">+48%	
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="collection">
+                                <div class="items-box">
+                                <img src="./img/Avater/Collection1.jpg" alt="">
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">Brad Simmons</a>
+                                            <p>HTML, CSS Coding</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="amount"> 
+                                    <p>$1,200,000</p>
+                                    <span>Paid</span>
+                                    </div>
+                                    <div class="value" style="color: #ff8800;
+                                    ">+28%	
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="collection">
+                                <div class="items-box">
+                                <img src="./img/Avater/Collection3.webp" alt="">
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">	Lebron Wayde</a>
+                                            <p>Awesome Users
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="amount"> 
+                                    <p>$5,200,000</p>
+                                    <span>Paid</span>
+                                    </div>
+                                    <div class="value" style="color: #00ccff;
+                                    ">+34%	
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="collection">
+                                <div class="items-box">
+                                <img src="./img/Avater/Collection2.webp" alt="">
+                                    <div class="text">
+                                    <div class="content">
+                                        <a href="#">	Jessie Clarcson</a>
+                                            <p>Most Successful</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-box">
+                                    <div class="amount"> 
+                                    <p>$12,200,000</p>
+                                    <span>Paid</span>
+                                    </div>
+                                    <div class="value" style="color: #1eff00;
+                                    ">+53%	
+                                    </div>
+                                    <a href="#" class="btn"><span class="material-symbols-outlined">
+                                        navigate_next
+                                        </span></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- =========== End section 3 ============ -->
+
+            <footer>
+                <div class="f-items">
+                    <p>2023©</p>
+                    <a href="#">Keenthemes</a>
+                </div>
+                <div class="f-items">
+                    <a href="#">About</a>
+                    <a href="#">Support</a>
+                    <a href="#">Purchase</a>
+                </div>
+            </footer>
+
+        </main>
+
+        <!-- ======= Pop-up =========== -->
+        <div class="modal" id="myModal">
+            <div class="content">
+                <div class="modal-content container" style="border: none;
+                padding: 40px 63px;
+                box-shadow: 0px 2px 4px rgba(102, 124, 150, 0.2);">
+                <h2>Start.</h2>
+                <span id="closeModal" class="close material-symbols-outlined">close_fullscreen
+                </span>
+                </div>
+
+                <br><br>
+                <div class="links-container container">
+                    <div class="Items-container">
+                        <div class="Items">
+                            <div class="title">
+                                <p>Dashboards</p>
+                            </div>
+                            <div class="link">
+                            <a class="active" href="#">Start</a>
+                            <a href="#">Extended</a>
+                            <a href="#">Light</a>
+                            <a href="#">Compact</a>
+                            </div>
+                            <br><br>
+                            <div class="title">
+                                <p>Profile</p>
+                            </div>
+                            <div class="link">
+                            <a href="#">Overview</a>
+                            <a href="#">Account</a>
+                            <a href="#">Settings</a>
+                            </div>
+                        </div>
+                        <div class="Items">
+                            <div class="title">
+                                <p>General</p>
+                            </div>
+                            <div class="link">
+                            <a href="#">Calendar</a>
+                            <a href="#">Private Chat</a>
+                            <a href="#">Group Chat</a>
+                            <a href="#">Drawer Chat</a>
+                            <a href="#">Inbox</a>
+                            <a href="#">Shop 1</a>
+                            <a href="#">Shop 2</a>
+                            <a href="#">Shop Product</a>
+                            </div>
+                            <br><br>
+                            <div class="title">
+                                <p>Resources</p>
+                            </div>
+                            <div class="link">
+                            <a href="#">Components</a>
+                            <a href="#">Documentation</a>
+                            <a href="#">Layout Builder</a>
+                            <a href="#">Changelog <span>v1.1.3</span></a>
+                            </div>
+                        </div>
+                        <div class="Items">
+                            <div class="title">
+                                <p>Apps</p>
+                            </div>
+                            <div class="link">
+                            <a href="#">FAQ</a>
+                            <a href="#">Pricing</a>
+                            <a href="#">Invoice</a>
+                            <a href="#">Login</a>
+                            <a href="#">Wizard</a>
+                            <a href="#">Error</a>
+                            </div>
+                        </div>
+                        <div class="Items">
+                            <div class="title">
+                                <p>Quick Links</p>
+                            </div>
+                            <div class="quick-link">
+                                <div class="lay-container">
+                                    <div class="lay">
+                                        <a href="#" style="background-color:#81a9ca;">
+                                            <p>Security</p>
+                                            <span>$2.99/month</span>
+                                        </a>
+                                        <a href="#" style="background-color:#bb7dc7;">
+                                            <p>Demo</p>
+                                            <span>Version</span>
+                                        </a>
+                                    </div>
+                                    <br>
+                                    <a href="#" style="background-color:#81ca8d;">
+                                        <p>Payment Methods
+                                        </p>
+                                        <span>Credit Cards/Debit Cards, Paypal, Transferwise & Others</span>
+                                    </a>
+                                    <br>
+                                    <div class="lay">
+                                        <a href="#" style="background-color:#cca683;">
+                                            <p>Security</p>
+                                            <span>$2.99/month</span>
+                                        </a>
+                                        <a href="#" style="background-color:#83cece;">
+                                            <p>Demo</p>
+                                            <span>Version</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="lay-container">
+                                <a href="#" style="background-color:#cabf7f;">
+                                    <p>Try Now </p>
+                                    <span>pro version</span>
+                                </a>
+                                <br>
+                                <a href="#"  style="background-color: #cc8d82;">
+                                    <p>Quick Start</p>
+                                    <span>single click import</span>
+                                    <img src="./img/Pop.png" alt="">
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+        </div>
+        <!-- ======= End Pop-up =========== -->
+
+        <!-- ======= Search =========== -->
+        <div class="search" id="search">
+            <div class="container">
+
+                <div class="close">
+                    <p><span class="material-symbols-outlined" id="search-cancel">close_fullscreen</span></p>
+                </div>
+
+                <div class="search-container">
+                    <input type="text" class="search-btn" placeholder="Search...">
+                </div>
+
+                <div class="image">
+                    <p class="title">Shop Goods</p>
+                        <div class="items">
+                            <div class="list-container">
+                                <div class="list">
+                                    <a href="">Explore</a>
+                                    <img src="./img/search4.jpg" alt="">
+                                </div>
+                                <br><br>
+                                <div class="list">
+                                    <a href="">Explore</a>
+                                    <img src="./img/search2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="list-container">
+                                <div class="list">
+                                    <a href="">Explore</a>
+                                    <img src="./img/search3.jpg" alt="">
+                                </div>
+                                <br><br>
+                                <div class="list">
+                                    <a href="">Explore</a>
+                                    <img src="./img/search1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="list-container">
+                                <div class="list">
+                                    <a href="">Explore</a>
+                                    <img src="./img/search5.jpg" alt="">
+                                </div>
+                                <br><br>
+                                <div class="list">
+                                    <a href="">Explore</a>
+                                    <img src="./img/search6.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="framework">
+                    <div class="fk-container">
+                        <h5 class="title">Framework Users</h5>
+                        <br>
+                        <div class="Items-container">
+                            <div class="items">
+                                <img src="./img/Avater/Avater1.webp" alt="">
+                                <div class="text">
+                                <p><a href="">Brad Simmons</a></p>
+                                <span>Uses: HTML/CSS/JS, Python</span>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="text">
+                                <p>$2,000,000</p>
+                                <span>Paid</span>
+                                </div>
+                                <p class="Icon"><span class="material-symbols-outlined">
+                                    arrow_forward
+                                    </span></p>
+                            </div>
+                        </div>
+                        <div class="Items-container">
+                            <div class="items">
+                                <img src="./img/Avater/Avater2.webp" alt="">
+                                <div class="text">
+                                <p><a href="">John Clarcson</a></p>
+                                <span>Uses: HTML, ReactJS, ASP.NET</span>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="text">
+                                <p>$1,200,000</p>
+                                <span>Paid</span>
+                                </div>
+                                <p class="Icon"><span class="material-symbols-outlined">
+                                    arrow_forward
+                                    </span></p>
+                            </div>
+                        </div>
+                        <div class="Items-container">
+                            <div class="items">
+                                <img src="./img/Avater/Avater3.webp" alt="">
+                                <div class="text">
+                                <p><a href="">	Lebron Wayde</a></p>
+                                <span>Uses: HTML. Laravel Framework</span>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="text">
+                                <p>$3,400,000</p>
+                                <span>Paid</span>
+                                </div>
+                                <p class="Icon"><span class="material-symbols-outlined">
+                                    arrow_forward
+                                    </span></p>
+                            </div>
+                        </div>
+                        <div class="Items-container">
+                            <div class="items">
+                                <img src="./img/Avater/Avater4.webp" alt="">
+                                <div class="text">
+                                <p><a href="">Kevin Leonard</a></p>
+                                <span>Uses: VueJS, Laravel Framework</span>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="text">
+                                <p>$35,600,000</p>
+                                <span>Paid</span>
+                                </div>
+                                <p class="Icon"><span class="material-symbols-outlined">
+                                    arrow_forward
+                                    </span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tutorials">
+                    <h5 class="title">Tutorials</h5>
+                    <br>
+                    <div class="items">
+                    <a href="#"><span class="material-symbols-outlined">double_arrow</span>How to Create Your First Project with Start Admin Theme</a>
+                    <p>But nothing can prepare you for the real thing</p>
+                    </div>
+                    <div class="items">
+                    <a href="#"><span class="material-symbols-outlined">double_arrow</span>Start Admin Theme Getting Started & Installation</a>
+                    <p>Long before you sit down to put digital pen</p>
+                    </div>
+                    <div class="items">
+                    <a href="#"><span class="material-symbols-outlined">double_arrow</span>Craft a headline that is both informative and will capture</a>
+                    <p>But nothing can prepare you for the real thing</p>
+                    </div>
+                    <div class="items">
+                    <a href="#"><span class="material-symbols-outlined">double_arrow</span>
+                    Write your post, either writing a draft in a single</a>
+                    <p>Long before you sit down to put pen</p>
+                    </div>
+                    <div class="items">
+                    <a href="#"><span class="material-symbols-outlined">double_arrow</span>Use images to enhance your post, improve its flow</a>
+                    <p>Long before you sit down to put digital pen</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- ======= End Search =========== -->
+
+        <!-- ======= Msg-bar =========== -->
+        <div class="msg-bar" id="msg-bar">
+                <div class="msg-bar-container">
+                    <div class="msg-items">
+                        <div class="items">
+                            <p class="name"><a href="#">Brian Cox</a></p>
+                            <span><div class="active"></div> Active</span>
+                        </div>
+                        <div class="buttons">
+                            <div class="dropbtn">
+                                <p><span class="material-symbols-outlined">more_horiz</span></p>
+                                <div class="dropbtn-content">
+                                <span class="title">CONTACTS</span>
+                                <a class="link" href="#">Add Contact</a>
+                                <a class="link" href="#">
+                                Invite Contacts
+                                <span class="material-symbols-outlined">report</span></a>
+                                <a class="link" href="#">
+                                <div class="dropdown">
+                                Groups
+                                <span class="material-symbols-outlined">navigate_next</span>
+                                <div class="dropdown-content">
+                                <div class="links">Create Group</div>
+                                <div class="links">Invite Members</div>
+                                <div class="links">Settings</div>
+                                </div>
+                                </div>
+                                </a>
+                                <a class="link" href="#">Settings</a>
+                                </div>
+                            </div>
+                            <p><span class="material-symbols-outlined" id="msg-cancel">cancel</span></p>
+                        </div>
+                    </div>
+
+                    <div class="comments-container">
+                        <div class="comments">
+                            <div class="list">
+                                <div class="image">
+                                    <img src="./img/profile1.jpg" alt="">
+                                    <p>
+                                    <a href="">Brian Cox</a>
+                                    <span>2 mins</span>
+                                    </p>
+                                </div>
+                                <div class="text"><p>How likely are you to recommend our company to your friends and family?
+                                </p></div>
+                            </div>
+                            <div class="list">
+                                <br>
+                                <div class="image">
+                                    <p>
+                                    <span>5 mins</span>
+                                    <a href="">You</a>
+                                    </p>
+                                    <img src="./img/profile2.jpg" alt="">
+                                </div>
+                                <div class="text"><p>Hey there, we're just writing to let you know that you've been subscribed to a repository on GitHub.</p></div>
+                            </div>
+                        </div>
+                        <div class="comments">
+                            <div class="list">
+                                <div class="image">
+                                    <img src="./img/profile1.jpg" alt="">
+                                    <p>
+                                    <a href="">Brian Cox</a>
+                                    <span>1 hour</span>
+                                    </p>
+                                </div>
+                                <div class="text"><p>Ok, Understood!
+                                </p></div>
+                            </div>
+                            <div class="list">
+                                <br>
+                                <div class="image">
+                                    <p>
+                                    <span>2 Hour</span>
+                                    <a href="">You</a>
+                                    </p>
+                                    <img src="./img/profile2.jpg" alt="">
+                                </div>
+                                <div class="text"><p>You'll receive notifications for all issues, pull requests!
+                                </p></div>
+                            </div>
+                        </div>
+                        <div class="comments">
+                            <div class="list">
+                                <div class="image">
+                                    <img src="./img/profile1.jpg" alt="">
+                                    <p>
+                                    <a href="">Brian Cox</a>
+                                    <span>3 hour</span>
+                                    </p>
+                                </div>
+                                <div class="text"><p>You can unwatch this repository immediately by clicking here: <a href="#">Keenthemes.com</a>
+                                </p></div>
+                            </div>
+                            <div class="list">
+                                <br>
+                                <div class="image">
+                                    <p>
+                                    <span>4 Hour</span>
+                                    <a href="">You</a>
+                                    </p>
+                                    <img src="./img/profile2.jpg" alt="">
+                                </div>
+                                <div class="text"><p>Most purchased Business courses during this sale!
+                                </p></div>
+                            </div>
+                        </div>
+                        <div class="comments">
+                            <div class="list">
+                                <div class="image">
+                                    <img src="./img/profile1.jpg" alt="">
+                                    <p>
+                                    <a href="">Brian Cox</a>
+                                    <span>5 Hour</span>
+                                    </p>
+                                </div>
+                                <div class="text"><p>Company BBQ to celebrate the last quater achievements and goals. Food and drinks provided
+                                </p></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="0" required></textarea>
+                        </div>
+            
+                        <div class="button">
+                        <div class="toolTip">
+                        <div class="tooltip-container">
+                                <span class="material-symbols-outlined">attach_file_add</span>
+                                <div class="tool">
+                                    <span>Coming</span>
+                                    <span>soon</span>
+                                </div>
+                                </div>
+        
+                                <div class="tooltip-container">
+                                <span class="material-symbols-outlined">cloudy_snowing</span>
+                                <div class="tool">
+                                    <span>Coming</span>
+                                    <span>soon</span>
+                                </div>
+                                </div>
+                        </div>
+
+                        <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        <!-- ======= End Msg-bar =========== -->
+
+        <!-- ======= num =========== -->
+        <div class="number-container" id="num">
+            <div class="number">
+                <div class="title-container">
+                    <div class="title">
+                        <p class="text">Activity Logs</p>
+                        <p class="icons"><span class="material-symbols-outlined"id="num-cancel">close_fullscreen</span></p>
+                    </div>
+                </div>
+                
+                <div class="description-container">
+                    <div class="line-container">
+                        <div class="line"></div>
+                        <p class="circle"><span class="material-symbols-outlined">forward_to_inbox</span></p>
+
+                        <p style="top: 56%;" class="circle"><span class="material-symbols-outlined">sports_score</span></p>
+
+                        <p style="top: 75%;" class="circle"><span class="material-symbols-outlined">link</span></p>
+
+                        <p style="top: 117%;" class="circle"><span class="material-symbols-outlined">layers</span></p>
+
+                        <p style="top: 136%;" class="circle"><span class="material-symbols-outlined">ink_marker</span></p>
+
+                        <p style="top: 195%;" class="circle"><span class="material-symbols-outlined">database</span></p>
+
+                        <p style="top: 219%;" class="circle"><span class="material-symbols-outlined">ink_pen</span></p>
+
+                        <p style="top: 271%;" class="circle"><span class="material-symbols-outlined">takeout_dining</span></p>
+                        
+                    </div>
+
+                    <div class="description">
+                        <div class="items">
+                            <p>There are 2 new tasks for you in “AirPlus Mobile App” project:</p>
+                            <p>Added at 4:23 PM by <img src="./img/pic.1.jpg" alt=""></p>
+                        </div>
+
+                        <div class="view">
+                            <a href="#" class="link">Meeting with customer</a>
+                            <p>Application Design</p>
+                            <div class="image">
+                                <img id="clickable-image1"  src="./img/pic.2.jpg" alt="">
+                                <img id="clickable-image2"  src="./img/pic.3.jpg" alt="">
+                                <img id="clickable-image3"  src="./img/pic.4.jpg" alt="">
+                            </div>
+                            <span style="background-color: #d6ffd6;
+                            color: #00d400;
+                            ">In Progress</span>
+                            <a href="#" class="btn">View</a>
+                        </div>
+                        <div class="view">
+                            <a href="#" class="link">Project Delivery Preparation</a>
+                            <p>CRM System Development</p>
+                            <div class="image">
+                                <img id="clickable-image4" src="./img/pic.5.jpg" alt="">
+                                <img id="clickable-image5" src="./img/pic.6.jpg" alt="">
+                            </div>
+                            <span style="background-color: #d6e8ff;
+                            color: #0199ff;
+                            ">Completed</span>
+                            <a href="#" class="btn">View</a>
+                        </div>
+                        <br>
+                        <div class="items">
+                            <p>Invitation for crafting engaging designs that speak human workshop</p>
+                            <p>Sent at 4:23 PM by <img src="./img/pic.7.jpg" alt=""></p>
+                        </div>
+                        <br>
+                        <div class="items">
+                            <a href="#">3 New Incoming Project Files:</a>
+                            <p>Sent at 10:30 PM by <img src="./img/pic.8.jpg" alt=""></p>
+                        </div>
+                        <div class="pdf-container">
+                            <div class="pdf">
+                                <img src="./img/Doc.png" alt="">
+                                <div class="text">
+                                    <a href="#">Finance KPI App Guidelines</a>
+                                    <span>1.9mb</span>
+                                </div>
+                            </div>
+                            <div class="pdf">
+                                <img src="./img/Doc.png" alt="">
+                                <div class="text">
+                                    <a href="#">Client UAT Testing Results</a>
+                                    <span>18kb</span>
+                                </div>
+                            </div>
+                            <div class="pdf">
+                                <img src="./img/Doc.png" alt="">
+                                <div class="text">
+                                    <a href="#">Finance Reports</a>
+                                    <span>20mb</span>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="items">
+                            <p>Task <a href="#">#45890</a> merged with <a href="#">#45890</a> in “Ads Pro Admin Dashboard project:</p>
+                            <p>Initiated at 4:23 PM by <img src="./img/profile1.jpg" alt=""></p>
+                        </div>
+                        <br>
+                        <div class="items">
+                            <p>3 new application design concepts added:</p>
+                            <p>Created at 4:23 PM by <img src="./img/profile2.jpg" alt=""></p>
+                        </div>
+                        <br>
+                        <div class="back-image">
+                            <div class="image-box1">
+                                <div class="image">
+                                    <div class="btn">Explore</div>
+                                </div>
+                            </div>
+                            <div class="image-box2">
+                                <div class="image">
+                                    <div class="btn">Explore</div>
+                                </div>
+                            </div>
+                            <div class="image-box3">
+                                <div class="image">
+                                    <div class="btn">Explore</div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="items">
+                            <p>New case <a href="#">#67890</a> is assigned to you in Multi-platform Database Design project</p>
+                            <p>Added at 4:23 PM by
+                            <a href="#">Alice Tan</a></p>
+                        </div>
+                        <br><br>
+                        <div class="items">
+                            <p>You have received a new order:</p>
+                            <p>Placed at 5:05 AM by
+                            <img src="./img/profile1.jpg" alt=""></p>
+                        </div>
+                        <br>
+                        <div class="database">
+                            <div class="data">
+                                <span class="material-symbols-outlined">sticky_note_2</span>
+                                <div class="text">
+                                    <p>Database Backup Process Completed!</p>
+                                    <p><span>
+                                        Login into Admin Dashboard to make sure the data integrity is OK
+                                    </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn">Proceed</div>
+                        </div>
+                        <br><br>
+                        <div class="items">
+                            <p>New order <a href="#">#67890</a> is placed for Workshow Planning & Budget Estimation</p>
+                            <p>Placed at 4:23 PM by
+                            <a href="#">Jimmy Bold</a></p>
+                        </div>
+                        <br><br>
+                    </div>
+                </div>
+
+                <div class="activities">
+                    <a href="#">
+                        View All Activities
+                        <span class="material-symbols-outlined">arrow_right_alt</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- ======= End num =========== -->
+
+        <!-- ======= SideBar =========== -->
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-container">
+                    <p><span class="material-symbols-outlined" id="cancel">cancel</span></p>
+                    <div class="logo-container">
+                        <div class="logo salesItem" onclick="toggleContent(this, 1, 'one')">
+                            <img src="./img/Logi/Lo2.png" alt="">
+                        </div>
+                        <div class="logo salesItem" onclick="toggleContent(this, 2, 'two')">
+                            <img src="./img/Logi/Lo3.png" alt="">
+                        </div>
+                        <div class="logo salesItem active" onclick="toggleContent(this, 3, 'three')">
+                            <img src="./img/Logi/Lo1.png" alt="">
+                        </div>
+                        <div class="logo salesItem" onclick="toggleContent(this, 4, 'four')">
+                            <img src="./img/Logi/Lo4.png" alt="">
+                        </div>
+                        <div class="logo salesItem" onclick="toggleContent(this, 5, 'five')">
+                            <img src="./img/Logi/Lo5.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="sale-container">
+                        <div class="sale one">
+                            <div class="title">
+                                <p>Aven Sales</p>
+                                <div class="DropDown drop1">
+                                <p class="icon dropdown-button" onclick="toggleDropdown1()"><span class="material-symbols-outlined ">lens_blur</span>
+                                </p>
+                                <div class="DropDown-Content">
+                                <div class="head">Manage</div>
+                                <a href="#">Add User</a>
+                                <a href="#">Add Role</a>
+                                <a href="#">
+                                <div class="dropdown">
+                                Add Group
+                                <span style="color: #0199ff;
+                                font-size: 16px;" class="material-symbols-outlined">navigate_next</span>
+                                <div class="dropdown-content">
+                                <div class="links">Create Group</div>
+                                <div class="links">Invite Members</div>
+                                <div class="links">Settings</div>
+                                </div>
+                                </div>
+                                </a>
+
+                                <a href="#">Reports</a>
+                                <div class="button">
+                                <a class="btn" href="#">Create New</a>
+                                </div>
+                                </div>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="profit-container element11">
+                                <div class="value-container">
+                                    <div class="value">
+                                        <p>40</p>
+                                        <p>30</p>
+                                        <p>20</p>
+                                        <p>10</p>
+                                        <p>0</p>
+                                    </div>
+                                    <div class="dash-container">
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-items">
+                                    <div class="items">
+                                        <div class="progress" style="padding: 89px 6px;"></div>
+                                        <div class="progress" style="padding: 30px 6px;"></div>
+                                        <div class="progress" style="padding: 54px 6px;"></div>
+                                        <div class="progress" style="padding: 80px 6px;"></div>
+                                        <div class="progress" style="padding: 62px 6px;"></div>
+                                        <div class="progress" style="padding: 70px 6px;"></div>
+                                    </div>
+                                    <div class="date-item">
+                                        <div class="date">Fab</div>
+                                        <div class="date">Mar</div>
+                                        <div class="date">Apr</div>
+                                        <div class="date">Mar</div>
+                                        <div class="date">Jun</div>
+                                        <div class="date">Jul</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="title">
+                                <p>Tasks Overview</p>
+                                <div class="DropDown2 drop2">
+                                    <p class="icon dropdown-button" onclick="toggleDropdown2()"><span class="material-symbols-outlined ">lens_blur</span>
+                                    </p>
+                                    <div class="DropDown-Content2">
+                                    <div class="head">Manage</div>
+                                    <a href="#">Add User</a>
+                                    <a href="#">Add Role</a>
+                                    <a href="#">
+                                    <div class="dropdown">
+                                    Add Group
+                                    <span style="color: #0199ff;
+                                    font-size: 16px;" class="material-symbols-outlined">navigate_next</span>
+                                    <div class="dropdown-content">
+                                    <div class="links">Create Group</div>
+                                    <div class="links">Invite Members</div>
+                                    <div class="links">Settings</div>
+                                    </div>
+                                    </div>
+                                    </a>
+    
+                                    <a href="#">Reports</a>
+                                    <div class="button">
+                                    <a class="btn" href="#">Create New</a>
+                                    </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <br>
+                            <div class="image-item">
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-1.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Blue Donut</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-2.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Lovely Hearts</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-3.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Hands & Yellow</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-5.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Cup & Green</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-6.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Bose QC 35 II</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sale two">
+                            <div class="title">
+                                <p>Kanba Sales</p>
+                                <div class="DropDown drop3">
+                                <p class="icon dropdown-button" onclick="toggleDropdown3()"><span class="material-symbols-outlined ">lens_blur</span>
+                                </p>
+                                <div class="DropDown-Content">
+                                <div class="head">Manage</div>
+                                <a href="#">Add User</a>
+                                <a href="#">Add Role</a>
+                                <a href="#">
+                                <div class="dropdown">
+                                Add Group
+                                <span style="color: #0199ff;
+                                font-size: 16px;" class="material-symbols-outlined">navigate_next</span>
+                                <div class="dropdown-content">
+                                <div class="links">Create Group</div>
+                                <div class="links">Invite Members</div>
+                                <div class="links">Settings</div>
+                                </div>
+                                </div>
+                                </a>
+
+                                <a href="#">Reports</a>
+                                <div class="button">
+                                <a class="btn" href="#">Create New</a>
+                                </div>
+                                </div>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="profit-container element12">
+                                <div class="value-container">
+                                    <div class="value">
+                                        <p>40</p>
+                                        <p>30</p>
+                                        <p>20</p>
+                                        <p>10</p>
+                                        <p>0</p>
+                                    </div>
+                                    <div class="dash-container">
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-items">
+                                    <div class="items">
+                                        <div class="progress" style="padding: 30px 6px;"></div>
+                                        <div class="progress" style="padding: 40px 6px;"></div>
+                                        <div class="progress" style="padding: 54px 6px;"></div>
+                                        <div class="progress" style="padding: 80px 6px;"></div>
+                                        <div class="progress" style="padding: 82px 6px;"></div>
+                                        <div class="progress" style="padding: 90px 6px;"></div>
+                                    </div>
+                                    <div class="date-item">
+                                        <div class="date">Fab</div>
+                                        <div class="date">Mar</div>
+                                        <div class="date">Apr</div>
+                                        <div class="date">Mar</div>
+                                        <div class="date">Jun</div>
+                                        <div class="date">Jul</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="title">
+                                <p>Kanba Products</p>
+                                <div class="DropDown2 drop4">
+                                    <p class="icon dropdown-button" onclick="toggleDropdown4()"><span class="material-symbols-outlined ">lens_blur</span>
+                                    </p>
+                                    <div class="DropDown-Content2">
+                                    <div class="head">Manage</div>
+                                    <a href="#">Add User</a>
+                                    <a href="#">Add Role</a>
+                                    <a href="#">
+                                    <div class="dropdown">
+                                    Add Group
+                                    <span style="color: #0199ff;
+                                    font-size: 16px;" class="material-symbols-outlined">navigate_next</span>
+                                    <div class="dropdown-content">
+                                    <div class="links">Create Group</div>
+                                    <div class="links">Invite Members</div>
+                                    <div class="links">Settings</div>
+                                    </div>
+                                    </div>
+                                    </a>
+    
+                                    <a href="#">Reports</a>
+                                    <div class="button">
+                                    <a class="btn" href="#">Create New</a>
+                                    </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <br>
+                            <div class="image-item">
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-1.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Blue Donut</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-2.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Lovely Hearts</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-3.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Hands & Yellow</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-5.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Cup & Green</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-6.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Bose QC 35 II</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="sale three" style="
+                        display: block;">
+                            <div class="title">
+                                <p>Fox Sales</p>
+                                <div class="DropDown drop5">
+                                <p class="icon dropdown-button" onclick="toggleDropdown5()"><span class="material-symbols-outlined ">lens_blur</span>
+                                </p>
+                                <div class="DropDown-Content">
+                                <div class="head">Manage</div>
+                                <a href="#">Add User</a>
+                                <a href="#">Add Role</a>
+                                <a href="#">
+                                <div class="dropdown">
+                                Add Group
+                                <span style="color: #0199ff;
+                                font-size: 16px;" class="material-symbols-outlined">navigate_next</span>
+                                <div class="dropdown-content">
+                                <div class="links">Create Group</div>
+                                <div class="links">Invite Members</div>
+                                <div class="links">Settings</div>
+                                </div>
+                                </div>
+                                </a>
+
+                                <a href="#">Reports</a>
+                                <div class="button">
+                                <a class="btn" href="#">Create New</a>
+                                </div>
+                                </div>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="profit-container element13">
+                                <div class="value-container">
+                                    <div class="value">
+                                        <p>40</p>
+                                        <p>30</p>
+                                        <p>20</p>
+                                        <p>10</p>
+                                        <p>0</p>
+                                    </div>
+                                    <div class="dash-container">
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-items">
+                                    <div class="items">
+                                        <div class="progress" style="padding: 59px 6px;"></div>
+                                        <div class="progress" style="padding: 70px 6px;"></div>
+                                        <div class="progress" style="padding: 94px 6px;"></div>
+                                        <div class="progress" style="padding: 70px 6px;"></div>
+                                        <div class="progress" style="padding: 82px 6px;"></div>
+                                        <div class="progress" style="padding: 70px 6px;"></div>
+                                    </div>
+                                    <div class="date-item">
+                                        <div class="date">Fab</div>
+                                        <div class="date">Mar</div>
+                                        <div class="date">Apr</div>
+                                        <div class="date">Mar</div>
+                                        <div class="date">Jun</div>
+                                        <div class="date">Jul</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="title">
+                                <p>Fox Bestsellers</p>
+                                <div class="DropDown2 drop6">
+                                    <p class="icon dropdown-button" onclick="toggleDropdown6()"><span class="material-symbols-outlined ">lens_blur</span>
+                                    </p>
+                                    <div class="DropDown-Content2">
+                                    <div class="head">Manage</div>
+                                    <a href="#">Add User</a>
+                                    <a href="#">Add Role</a>
+                                    <a href="#">
+                                    <div class="dropdown">
+                                    Add Group
+                                    <span style="color: #0199ff;
+                                    font-size: 16px;" class="material-symbols-outlined">navigate_next</span>
+                                    <div class="dropdown-content">
+                                    <div class="links">Create Group</div>
+                                    <div class="links">Invite Members</div>
+                                    <div class="links">Settings</div>
+                                    </div>
+                                    </div>
+                                    </a>
+    
+                                    <a href="#">Reports</a>
+                                    <div class="button">
+                                    <a class="btn" href="#">Create New</a>
+                                    </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <br>
+                            <div class="image-item">
+                                <div class="image">
+                                    <img src="./img/sidebar/1.png" alt="">
+                                    <div class="text">
+                                        <a href="#">Blue Donut</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/4.png" alt="">
+                                    <div class="text">
+                                        <a href="#">Lovely Hearts</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/6.png" alt="">
+                                    <div class="text">
+                                        <a href="#">Hands & Yellow</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/7.png" alt="">
+                                    <div class="text">
+                                        <a href="#">Cup & Green</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/8.png" alt="">
+                                    <div class="text">
+                                        <a href="#">Bose QC 35 II</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="sale four">
+                            <div class="title">
+                                <p>Tower Sales</p>
+                                <div class="DropDown drop7">
+                                <p class="icon dropdown-button" onclick="toggleDropdown7()"><span class="material-symbols-outlined ">lens_blur</span>
+                                </p>
+                                <div class="DropDown-Content">
+                                <div class="head">Manage</div>
+                                <a href="#">Add User</a>
+                                <a href="#">Add Role</a>
+                                <a href="#">
+                                <div class="dropdown">
+                                Add Group
+                                <span style="color: #0199ff;
+                                font-size: 16px;" class="material-symbols-outlined">navigate_next</span>
+                                <div class="dropdown-content">
+                                <div class="links">Create Group</div>
+                                <div class="links">Invite Members</div>
+                                <div class="links">Settings</div>
+                                </div>
+                                </div>
+                                </a>
+
+                                <a href="#">Reports</a>
+                                <div class="button">
+                                <a class="btn" href="#">Create New</a>
+                                </div>
+                                </div>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="profit-container element14">
+                                <div class="value-container">
+                                    <div class="value">
+                                        <p>40</p>
+                                        <p>30</p>
+                                        <p>20</p>
+                                        <p>10</p>
+                                        <p>0</p>
+                                    </div>
+                                    <div class="dash-container">
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-items">
+                                    <div class="items">
+                                        <div class="progress" style="padding: 90px 6px;"></div>
+                                        <div class="progress" style="padding: 90px 6px;"></div>
+                                        <div class="progress" style="padding: 90px 6px;"></div>
+                                        <div class="progress" style="padding: 60px 6px;"></div>
+                                        <div class="progress" style="padding: 52px 6px;"></div>
+                                        <div class="progress" style="padding: 90px 6px;"></div>
+                                    </div>
+                                    <div class="date-item">
+                                        <div class="date">Fab</div>
+                                        <div class="date">Mar</div>
+                                        <div class="date">Apr</div>
+                                        <div class="date">Mar</div>
+                                        <div class="date">Jun</div>
+                                        <div class="date">Jul</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="title">
+                                <p>Tower Latest Products</p>
+                                <div class="DropDown2 drop8">
+                                    <p class="icon dropdown-button" onclick="toggleDropdown8()"><span class="material-symbols-outlined ">lens_blur</span>
+                                    </p>
+                                    <div class="DropDown-Content2">
+                                    <div class="head">Manage</div>
+                                    <a href="#">Add User</a>
+                                    <a href="#">Add Role</a>
+                                    <a href="#">
+                                    <div class="dropdown">
+                                    Add Group
+                                    <span style="color: #0199ff;
+                                    font-size: 16px;" class="material-symbols-outlined">navigate_next</span>
+                                    <div class="dropdown-content">
+                                    <div class="links">Create Group</div>
+                                    <div class="links">Invite Members</div>
+                                    <div class="links">Settings</div>
+                                    </div>
+                                    </div>
+                                    </a>
+    
+                                    <a href="#">Reports</a>
+                                    <div class="button">
+                                    <a class="btn" href="#">Create New</a>
+                                    </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <br>
+                            <div class="image-item">
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-1.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Blue Donut</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-2.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Lovely Hearts</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-3.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Hands & Yellow</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-5.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Cup & Green</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-6.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Bose QC 35 II</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sale five">
+                            <div class="title">
+                                <p>Treva Sales</p>
+                                <div class="DropDown drop9">
+                                <p class="icon dropdown-button" onclick="toggleDropdown9()"><span class="material-symbols-outlined ">lens_blur</span>
+                                </p>
+                                <div class="DropDown-Content">
+                                <div class="head">Manage</div>
+                                <a href="#">Add User</a>
+                                <a href="#">Add Role</a>
+                                <a href="#">
+                                <div class="dropdown">
+                                Add Group
+                                <span style="color: #0199ff;
+                                font-size: 16px;" class="material-symbols-outlined">navigate_next</span>
+                                <div class="dropdown-content">
+                                <div class="links">Create Group</div>
+                                <div class="links">Invite Members</div>
+                                <div class="links">Settings</div>
+                                </div>
+                                </div>
+                                </a>
+
+                                <a href="#">Reports</a>
+                                <div class="button">
+                                <a class="btn" href="#">Create New</a>
+                                </div>
+                                </div>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="profit-container element15">
+                                <div class="value-container">
+                                    <div class="value">
+                                        <p>40</p>
+                                        <p>30</p>
+                                        <p>20</p>
+                                        <p>10</p>
+                                        <p>0</p>
+                                    </div>
+                                    <div class="dash-container">
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                        <div class="dash"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-items">
+                                    <div class="items">
+                                        <div class="progress" style="padding: 35px 6px;"></div>
+                                        <div class="progress" style="padding: 30px 6px;"></div>
+                                        <div class="progress" style="padding: 90px 6px;"></div>
+                                        <div class="progress" style="padding: 40px 6px;"></div>
+                                        <div class="progress" style="padding: 20px 6px;"></div>
+                                        <div class="progress" style="padding: 90px 6px;"></div>
+                                    </div>
+                                    <div class="date-item">
+                                        <div class="date">Fab</div>
+                                        <div class="date">Mar</div>
+                                        <div class="date">Apr</div>
+                                        <div class="date">Mar</div>
+                                        <div class="date">Jun</div>
+                                        <div class="date">Jul</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="title">
+                                <p>Treva's Products</p>
+                                <div class="DropDown2 drop10">
+                                    <p class="icon dropdown-button" onclick="toggleDropdown10()"><span class="material-symbols-outlined ">lens_blur</span>
+                                    </p>
+                                    <div class="DropDown-Content2">
+                                    <div class="head">Manage</div>
+                                    <a href="#">Add User</a>
+                                    <a href="#">Add Role</a>
+                                    <a href="#">
+                                    <div class="dropdown">
+                                    Add Group
+                                    <span style="color: #0199ff;
+                                    font-size: 16px;" class="material-symbols-outlined">navigate_next</span>
+                                    <div class="dropdown-content">
+                                    <div class="links">Create Group</div>
+                                    <div class="links">Invite Members</div>
+                                    <div class="links">Settings</div>
+                                    </div>
+                                    </div>
+                                    </a>
+    
+                                    <a href="#">Reports</a>
+                                    <div class="button">
+                                    <a class="btn" href="#">Create New</a>
+                                    </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <br>
+                            <div class="image-item">
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-1.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Blue Donut</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-2.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Lovely Hearts</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-3.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Hands & Yellow</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-5.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Cup & Green</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                                <div class="image">
+                                    <img src="./img/sidebar/feed-6.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#">Bose QC 35 II</a>
+                                        <p>Study the highway types</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sideButton">
+                        <a href="#" class="btn">View Extended Layout</a>
+                    </div>
+
+                </div>
+            </div>
+        <!-- ======= End SideBar =========== -->
+
+    </div>
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/clickable.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+<script>
+        // ===== SideBar ======
+  var activeContainer = 3;
+
+function toggleContent(container, containerNumber, contentId) {
+  if (containerNumber !== activeContainer) {
+    var activeContainerElement = document.querySelector('.salesItem.active');
+    if (activeContainerElement) {
+      activeContainerElement.classList.remove('active');
+    }
+    container.classList.add('active');
+    activeContainer = containerNumber;
+  }
+
+  const content = document.getElementsByClassName('sale');
+  for (let i = 0; i < content.length; i++) {
+    content[i].style.display = 'none';
+
+  }
+
+  const selectedContent = document.getElementsByClassName(contentId);
+  if (selectedContent.length > 0) {
+    selectedContent[0].style.display = 'block';
+
+  }
+}
+// ===== End SideBar ======
+
+    // ===== Description ======
+       var activeContainer1 = 1;
+
+function toggleSpan(container1, containerNumber1, contentId1) {
+  if (containerNumber1 !== activeContainer1) {
+    var activeContainerElement1 = document.querySelector('.btn.active');
+    if (activeContainerElement1) {
+      activeContainerElement1.classList.remove('active');
+    }
+    container1.classList.add('active');
+    activeContainer1 = containerNumber1;
+  }
+
+  const content1 = document.getElementsByClassName('Description');
+  for (let i = 0; i < content1.length; i++) {
+    content1[i].style.display = 'none';
+  }
+
+  const selectedContent1 = document.getElementsByClassName(contentId1);
+  if (selectedContent1.length > 0) {
+    selectedContent1[0].style.display = 'block';
+
+  }
+}
+// ===== End Description ======
+
+    // ===== Dropdown12 ======
+       var activeContainer1 = 1;
+
+function toggleButton(container, containerNumber, contentId) {
+  if (containerNumber !== activeContainer1) {
+    var activeContainerElement = document.querySelector('.paragraph.active');
+    if (activeContainerElement) {
+      activeContainerElement.classList.remove('active');
+    }
+    container.classList.add('active');
+    activeContainer1 = containerNumber;
+  }
+
+  const content = document.getElementsByClassName('links1');
+  for (let i = 0; i < content.length; i++) {
+    content[i].style.display = 'none';
+  }
+
+  const selectedContent = document.getElementsByClassName(contentId);
+  if (selectedContent.length > 0) {
+    selectedContent[0].style.display = 'block';
+
+  }
+}
+// ===== End Dropdown12 ======
+
+// ========= campaign leaders =====
+var activeContainer2 = 1;
+
+function toggleBtn(containe2, containerNumbe2, contentId2) {
+  if (containerNumbe2 !== activeContainer2) {
+    var activeContainerElement2 = document.querySelector('.items.active');
+    if (activeContainerElement2) {
+      activeContainerElement2.classList.remove('active');
+    }
+    containe2.classList.add('active');
+    activeContainer2 = containerNumbe2;
+  }
+
+  const content2 = document.getElementsByClassName('progress-container');
+  for (let i = 0; i < content2.length; i++) {
+    content2[i].style.display = 'none';
+  }
+
+  const selectedContent2 = document.getElementsByClassName(contentId2);
+  if (selectedContent2.length > 0) {
+    selectedContent2[0].style.display = 'block';
+  }
+}
+// ====== campaign leaders =======
+
+// ========= Achieve leaders =====
+var activeContainer3 = 1;
+
+function toggleAch(containe3, containerNumbe3, contentId3) {
+  if (containerNumbe3 !== activeContainer3) {
+    var activeContainerElement3 = document.querySelector('.btnItem.active');
+    if (activeContainerElement3) {
+      activeContainerElement3.classList.remove('active');
+    }
+    containe3.classList.add('active');
+    activeContainer3 = containerNumbe3;
+  }
+
+  const content3 = document.getElementsByClassName('script');
+  for (let i = 0; i < content3.length; i++) {
+    content3[i].style.display = 'none';
+  }
+
+  const selectedContent3 = document.getElementsByClassName(contentId3);
+  if (selectedContent3.length > 0) {
+    selectedContent3[0].style.display = 'block';
+  }
+}
+// ====== campaign leaders =======
+
+    </script>
+</body>
+</html>
